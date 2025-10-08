@@ -14,15 +14,15 @@ set_config(transform_output='pandas')
 
 # Page configuration
 st.set_page_config(
-    page_title="Heart Disease Predictor",
+    page_title="Heart Failure Predictor",
     page_icon="🫀",
     layout="wide"
 )
 
 # Title and description
-st.title("🫀 Heart Disease Risk Prediction")
+st.title("🫀 Heart Failure Risk Prediction")
 st.markdown("""
-This application predicts the risk of heart disease based on patient medical data.
+This application predicts the risk of heart Failure based on patient medical data.
 Please enter the patient information below to get a prediction.
 """)
 
@@ -243,5 +243,6 @@ if st.button("🔍 Predict Heart Disease Risk", type="primary", use_container_wi
     # Display input summary
     with st.expander("📝 View Input Summary"):
         st.dataframe(input_data.T, use_container_width=True)
+
 
 
