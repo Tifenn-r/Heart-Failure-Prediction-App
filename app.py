@@ -22,7 +22,7 @@ st.set_page_config(
 # Title and description
 st.title("🫀 Heart Failure Risk Prediction")
 st.markdown("""
-This application predicts the risk of heart Failure based on patient medical data.
+This application predicts the risk of heart failure based on patient medical data.
 Please enter the patient information below to get a prediction.
 """)
 
@@ -243,6 +243,7 @@ if st.button("🔍 Predict Heart Disease Risk", type="primary", use_container_wi
     # Display input summary
     with st.expander("📝 View Input Summary"):
         st.dataframe(input_data.T, use_container_width=True)
+
 
 
 
